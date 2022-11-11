@@ -29,7 +29,7 @@ while number > 0:
     output.append(rem)
     number = number // 10
 
-# print(output)
+
 
 # 4. Reversing the number
 correct_order = []
