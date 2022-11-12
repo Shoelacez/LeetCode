@@ -1,4 +1,4 @@
-digits = [1, 2, 3]
+digits = [9, 9, 9]
 
 '''APPROACH 01'''
 # last_num = digits[len(digits) - 1]
@@ -28,7 +28,6 @@ while number > 0:
     rem = number % 10
     output.append(rem)
     number = number // 10
-
 
 
 # 4. Reversing the number
