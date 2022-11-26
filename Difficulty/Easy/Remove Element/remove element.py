@@ -4,4 +4,5 @@
 # Initialization
 # I had to change stufs
 
-
+class linkedList():
+    pass
