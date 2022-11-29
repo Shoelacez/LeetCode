@@ -6,3 +6,7 @@
 
 class linkedList():
     pass
+
+class linkedList():
+    def __init__(self):
+        pass
