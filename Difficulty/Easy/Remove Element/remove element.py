@@ -12,5 +12,10 @@ class linkedList():
         pass
 
 class PostponedLeetCoding():
+
+    def text(self):
+        print(f"Reason: Too busy with school and alx")
+
+class PostponedLeetCoding():
     def text(self):
         print(f"Reason: Too busy with school and alx")
