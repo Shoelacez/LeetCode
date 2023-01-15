@@ -20,7 +20,7 @@ for x, h in enumerate(height):
         # print(area)
         areas.append(area)
 
-print(areas)
+# print(areas)
 
 uniques = []
 for a in areas:
@@ -29,7 +29,7 @@ for a in areas:
     else:
         uniques.append(a)
 
-print(uniques)
+# print(uniques)
 
 '''Container with the most water'''
 print(max(uniques))

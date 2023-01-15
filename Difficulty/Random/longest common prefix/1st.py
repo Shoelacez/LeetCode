@@ -1,10 +1,11 @@
 strs = ["flower", "flow", "flight"]
 
-chars = []
-for w in strs:
-    print(f"for {w}")
-    for c in w:
-        print(c)
-        chars.append(c)
+tracker = False
 
-print(chars)
+common_in_all = []
+for i in range(len(strs)):
+    print(f"Case: {strs[i]}")
+    for j in range(len(strs[i])):
+        char = strs[i][j]
+        print(char)
+

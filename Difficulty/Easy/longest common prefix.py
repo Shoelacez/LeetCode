@@ -2,14 +2,31 @@ strs = ["flower", "flow", "flight"]
 output = "fl"
 
 
-x = [item for item in zip(strs[0], strs[1], strs[2])]
-# print(x)
+# def longestCommonPrefix(words):
+#     res = ""
+#     for i in range(len(strs[0])):
+#         for s in strs:
+#             if i == len(s) or s[i] != strs[0][i]:
+#                 return res
+#         res += strs[0][i]
+#     return res
+#
+#
+# answer = longestCommonPrefix(strs)
+# print(answer)
 
-# Determinant is the shortest word
-for word in strs:
-    current = len(word)
-    for item in range(1,len(strs)):
-        if len(strs[item]) < current:
-            shortest = len(strs[item]);
-            print(shortest)
-    break
+
+def longestCommonPrefix(words):
+    res = ""
+    for i in range(len(strs[0])):
+        print(f"i: {i}")
+        for s in strs:
+            print(s)
+            if i == len(s) or s[i] != strs[0][i]:
+                return res
+        res += strs[0][i]
+    return res
+
+
+answer = longestCommonPrefix(strs)
+print(answer)
