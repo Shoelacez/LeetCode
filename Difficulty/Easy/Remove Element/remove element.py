@@ -1,24 +1,14 @@
-'''APPROACH 1'''
-#  打印02 and i have no clue on wg=hat is going on.
+nums = [0,1,2,2,3,0,4,2]
+val = 2
+expected_output = 2
+# nums = [2, 2, 0, 0]
 
-# Initialization
-# I had to change stufs
-
-class linkedList():
-    pass
-
-class linkedList():
-    def __init__(self):
-        pass
-class PostponedLeetCoding():
-    def text(self):
-        print(f"Reason: Too busy with school and alx")
-
-class PostponedLeetCoding():
-
-    def text(self):
-        print(f"Reason: Too busy with school and alx")
-
-class PostponedLeetCoding():
-    def text(self):
-        print(f"Reason: Too busy with school and alx")
+result = []
+count = 0
+for num in nums:
+    if val != num:
+        result.append(num)
+        count += 1
+    
+print(result)
+print(count)
