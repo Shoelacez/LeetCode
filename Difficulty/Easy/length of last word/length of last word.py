@@ -1,15 +1,14 @@
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
-                s = s.lower()
-                for i in range(len(s)):
-                    if not s[i].islower():
-                        last_word = s[i+1:]
-                        
-                for i in range(1, len(last_word)+1):
-                    pass
-                return i
+        start, end = 0,0 
 
-s = "   fly me   to   the moon  "
-soln = Solution()
-result = soln.lengthOfLastWord(s)
-print(result)
+        last_word = ''
+        for i in range(len(s)):
+            if s[i].isspace():
+                start = i+1
+                # print(f"Char at i = {i}: is a space")
+            else:
+                end = i
+                # print(f"Start: {start}, End: {end}")
+                last_word = s[start:end+1]
+        print(last_word)
